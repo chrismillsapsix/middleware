@@ -30,7 +30,7 @@
 [plugins]
 	proc = yes
 	diskspace = no
-	cgroups = no
+	cgroups = yes
 	tc = no
 	idlejitter = no
 	perf = no
@@ -46,6 +46,9 @@
 
 [statsd]
 	enabled = no
+
+[plugin:cgroups]
+	/sys/fs/cgroup = yes
 
 [plugin:proc]
 	netdata server resources = yes
